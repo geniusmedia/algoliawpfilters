@@ -1,8 +1,8 @@
 /** 
-Filter to use with Algolia Wordpress plugin, enables CDN for the thumbnails 
-You need to reindex after adding the code to your functions.php.
-Change the urls as as requested.
-**/
+* Filter to use with Algolia Wordpress plugin, enables CDN for the thumbnails 
+* You need to reindex after adding the code to your functions.php.
+* Change the urls as as requested.
+*/
 
 function custom_post_shared_attributes( array $shared_attributes) {
 	$shared_attributes['images']['thumbnail'] = str_replace( 'www.xyz.com', 'cdn.xyz.com', $shared_attributes['images']['thumbnail'] );
